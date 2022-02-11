@@ -1,0 +1,10 @@
+{
+    "params":
+    {
+        "local_server":"True",
+        "local_uri": "mysql://root:@localhost/turbowriter",
+        "prod_uri":"mysql://root:@localhost/turbowriter",
+        "admin_user":"admin",
+        "admin_password":"admin"    
+    }
+}

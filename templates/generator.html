@@ -1,0 +1,49 @@
+{% extends "layout.html" %}
+{% block body %}
+
+        <!-- Page Header-->
+        <!-- JavaScript Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+        <header class="masthead" style="background-image: url('{{ url_for('static', filename='assets/img/post-bg.png') }}')">
+            <div class="container position-relative px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <div class="post-heading">
+                            <h1>Intelligent Text Generator</h1>
+                            <h2 class="subheading">Start generating content now!</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+    
+        <!-- Post Content-->
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="card">
+                    <div class="card-body">
+                        <h5>Select Use Case</h5>
+                        <hr>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <form class="" action="/generator" method="post">
+                                    
+                                    <div class ="mb-3">
+                                    <br><a href="/generator/productdescription" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Product Description</a></br>
+                                    <br><a href="/generator/email" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">E-mails</a></br>
+                                    <br><a href="/generator/summarization" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Summarization </a></br>
+                                    <br><a href="/generator/twitterpost" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Twitter Post</a></br>
+                                    <br><a href="/generator/blogidea" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Blog Idea and outline</a></br>
+                                    <br>
+                                    </div>
+
+                                </form>
+                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        {% endblock %}
